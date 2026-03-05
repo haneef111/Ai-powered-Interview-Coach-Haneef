@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - AI Interview Coach</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">AI Interview Coach</h1>
+            <div class="nav-links">
+                <span id="user-name"></span>
+                <button class="btn-secondary" id="logout-btn">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <div class="container">
+            <h2>Welcome to Your Dashboard</h2>
+            
+            <div class="dashboard-actions">
+                <a href="prepare-interview.html" class="btn-primary">Start New Interview</a>
+            </div>
+
+            <div class="interview-history">
+                <h3>Interview History</h3>
+                <div id="interview-list">
+                    <p>Loading interviews...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

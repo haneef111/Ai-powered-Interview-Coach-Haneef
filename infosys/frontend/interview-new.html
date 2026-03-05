@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Session - AI Interview Coach</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">AI Interview Coach</h1>
+        </div>
+    </nav>
+
+    <div class="interview-container">
+        <div class="container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+                <span class="progress-text" id="progress-text">Question 1 of 5</span>
+            </div>
+
+            <div class="video-section">
+                <video id="video-preview" autoplay muted></video>
+                <div id="recording-indicator" style="display: none;">
+                    <span class="recording-dot"></span> Recording...
+                </div>
+                <div id="timer" style="display: none;">00:00</div>
+            </div>
+
+            <div class="question-section">
+                <h3 id="question-number">Question 1</h3>
+                <p id="current-question">Loading question...</p>
+                <small id="question-type"></small>
+            </div>
+
+            <div class="controls">
+                <button class="btn-secondary" id="prev-btn" style="display: none;">Previous</button>
+                <button class="btn-primary" id="start-btn">Start Recording</button>
+                <button class="btn-danger" id="stop-btn" style="display: none;">Stop Recording</button>
+                <button class="btn-primary" id="next-btn" style="display: none;">Next Question</button>
+                <button class="btn-success" id="finish-btn" style="display: none;">Finish Interview</button>
+            </div>
+
+            <div id="status-message"></div>
+        </div>
+    </div>
+
+    <script src="js/interview-new.js"></script>
+</body>
+</html>

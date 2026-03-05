@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prepare Interview - AI Interview Coach</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="dashboard.html">AI Interview Coach</a></h1>
+            <div class="nav-links">
+                <span id="user-name"></span>
+                <button class="btn-secondary" id="logout-btn">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="interview-container">
+        <div class="container">
+            <h2>Prepare Your Interview</h2>
+            <p>Upload your resume and job description to get personalized interview questions</p>
+
+            <form id="prepare-form" enctype="multipart/form-data">
+                <div class="form-section">
+                    <h3>📄 Upload Resume</h3>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.docx,.txt" required>
+                    <small>Supported formats: PDF, DOCX, TXT (Max 5MB)</small>
+                </div>
+
+                <div class="form-section">
+                    <h3>📋 Job Description</h3>
+                    <textarea id="job-description" name="job_description" rows="10" 
+                              placeholder="Paste the job description here..." required></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary" id="submit-btn">Generate Questions</button>
+                    <a href="dashboard.html" class="btn-secondary">Cancel</a>
+                </div>
+            </form>
+
+            <div id="status-message"></div>
+            
+            <div id="questions-preview" style="display: none;">
+                <h3>Generated Questions</h3>
+                <div id="questions-list"></div>
+                <button class="btn-primary" id="start-interview-btn">Start Interview</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/prepare-interview.js"></script>
+</body>
+</html>

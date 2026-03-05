@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Interview - AI Interview Coach</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="dashboard.html">AI Interview Coach</a></h1>
+        </div>
+    </nav>
+
+    <div class="interview-container">
+        <div class="container">
+            <h2>Mock Interview Session</h2>
+            
+            <div class="video-section">
+                <video id="video-preview" autoplay muted></video>
+                <div id="recording-indicator" style="display: none;">🔴 Recording...</div>
+            </div>
+
+            <div class="question-section">
+                <h3>Question <span id="question-number">1</span> of <span id="total-questions">5</span></h3>
+                <p id="current-question">Loading question...</p>
+            </div>
+
+            <div class="controls">
+                <button class="btn-primary" id="start-btn">Start Recording</button>
+                <button class="btn-secondary" id="stop-btn" style="display: none;">Stop Recording</button>
+                <button class="btn-primary" id="next-btn" style="display: none;">Next Question</button>
+                <button class="btn-primary" id="submit-btn" style="display: none;">Submit Interview</button>
+            </div>
+
+            <div id="status-message"></div>
+        </div>
+    </div>
+
+    <script src="js/interview.js"></script>
+</body>
+</html>

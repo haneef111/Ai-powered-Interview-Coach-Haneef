@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - AI Interview Coach</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="index.html">AI Interview Coach</a></h1>
+        </div>
+    </nav>
+
+    <div class="auth-container">
+        <div class="auth-box">
+            <h2>Create Account</h2>
+            <form id="signup-form">
+                <div>
+                    <input type="text" id="name" placeholder="Full Name" required>
+                </div>
+                <div>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <div>
+                    <input type="text" id="job-role" placeholder="Job Role (e.g., Software Engineer)">
+                </div>
+                <div>
+                    <input type="text" id="industry" placeholder="Industry (e.g., Technology)">
+                </div>
+                <button type="submit" class="btn-primary" id="submit-btn">Sign Up</button>
+            </form>
+            <p class="toggle-form">
+                <span>Already have an account?</span>
+                <a href="login.html">Login</a>
+            </p>
+            <div id="error-message" class="error-message"></div>
+        </div>
+    </div>
+
+    <script src="js/signup.js"></script>
+</body>
+</html>
